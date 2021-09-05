@@ -1,9 +1,7 @@
 import { createContext, useState } from "react";
+import { GenreID } from "../interface/GenreID";
 
-interface GenreID {
-  selectedGenreId: number;
-  setSelectedGenreId(id: number): void;
-}
+
 export const AuthContext = createContext<GenreID>({} as GenreID )
 
 export const AuthProvider: React.FC = ({children}) => {
